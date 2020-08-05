@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: white;
+  }
+  
+  #header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #header-grid a {
+    cursor: pointer;
+    text-decoration: none;
+    color: green;
+  }
+  
+  #header-grid a:hover {
+    cursor: pointer;
+    color: tomato;
+    text-decoration: underline;
+  }
+  
+  .header-image {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .navigation-bar {
+    width: 100%;
+    background-color: tomato;
+    overflow: auto;
+  }
+  
+  .navigation-bar a {
+    float: left;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .navigation-bar a:hover {
+    background-color: darkred;
+  }
+
+  .nav-active {
+      background-color: green;
+  }
+
+  #intro-grid {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 3em;
+    row-gap: 3em;
+    text-align: justify;
+    align-content: center;
+    padding: 3em;
+    font-size: 1em;
+    background-color: rgb(250, 248, 248);
+}
+
+.intro-image {
+    max-height: 15em;
+    max-width: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.intro-item a {
+    color: green;
+    text-decoration: none;
+}
+
+.intro-item a:hover {
+    color: tomato;
+    text-decoration: underline;
+}  
+
+  #footer-grid {
+    display: grid;
+    display: grid;
+    min-height: 10em;
+    max-width: 100%;
+    margin: 0;
+    padding: 1em;
+    font-size: 1em;
+    background-color: green;
+  }
+  
+  .footer-item ul {
+    list-style-type: none;
+  }
+  
+  .footer-item li a {
+    display: block;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+  
+  .footer-item li {
+    text-align: center;
+  }
+  
+  .footer-item li a:hover {
+    background-color: tomato;
+    color: white;
+    text-decoration: underline;
+  }
