@@ -4,10 +4,18 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  line-height: 1.6;
   background-color: white;
+  line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #header-grid {
@@ -30,13 +38,14 @@ html {
 #header-grid a {
   cursor: pointer;
   text-decoration: none;
-  color: green;
+  color: #c72424;
 }
 
 #header-grid a:hover {
   cursor: pointer;
-  color: tomato;
+  color: green;
   text-decoration: underline;
+  font-size: 1.2em;
 }
 
 .header-image {
@@ -48,7 +57,7 @@ html {
 
 .navigation-bar {
   width: 100%;
-  background-color: tomato;
+  background-color: #c72424;
   overflow: auto;
 }
 
@@ -61,11 +70,11 @@ html {
 }
 
 .navigation-bar a:hover {
-  background-color: darkred;
+  background-color: #538d22;
 }
 
 .nav-active {
-  background-color: green;
+  background-color: darkred;
 }
 
 #intro-grid {
@@ -83,25 +92,106 @@ html {
       align-content: center;
   padding: 3em;
   font-size: 1em;
-  background-color: #faf8f8;
 }
 
 .intro-image {
-  max-height: 15em;
-  max-width: 50%;
+  height: 40vh;
+  width: 75vw;
   -o-object-fit: cover;
      object-fit: cover;
-  text-align: center;
+  border-radius: 10%;
+  -webkit-box-shadow: 0 0 1px 1px #538d22;
+          box-shadow: 0 0 1px 1px #538d22;
+}
+
+.intro-image:hover {
+  cursor: pointer;
+  border: 1px solid darkred;
 }
 
 .intro-item a {
-  color: green;
+  color: #538d22;
   text-decoration: none;
 }
 
 .intro-item a:hover {
-  color: tomato;
+  color: darkred;
   text-decoration: underline;
+  font-size: 1.2em;
+}
+
+#menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 95%;
+  margin: 0;
+  row-gap: 1em;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 2em;
+  font-size: 1em;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px #538d22;
+          box-shadow: 2px 2px 2px 2px #538d22;
+  opacity: 5;
+  border-radius: 20px;
+}
+
+.menu-item:hover > .menu-description {
+  opacity: 5;
+  -webkit-box-shadow: 2px 2px 2px 2px #538d22;
+          box-shadow: 2px 2px 2px 2px #538d22;
+  top: 4em;
+  border-radius: 5px;
+}
+
+.menu-image {
+  height: 50vh;
+  width: 70vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.menu-item a {
+  color: #538d22;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.menu-item:hover > .menu-image {
+  opacity: 5;
+  -webkit-box-shadow: 2px 2px 2px 2px #538d22;
+          box-shadow: 2px 2px 2px 2px #538d22;
+  top: 1em;
+  border: 1px solid #538d22;
+}
+
+.menu-description {
+  text-align: justify;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  top: 1em;
+  font-size: 1em;
 }
 
 #footer-grid {
@@ -113,7 +203,7 @@ html {
   margin: 0;
   padding: 1em;
   font-size: 1em;
-  background-color: green;
+  background-color: #538d22;
 }
 
 .footer-item ul {
@@ -132,7 +222,7 @@ html {
 }
 
 .footer-item li a:hover {
-  background-color: tomato;
+  background-color: darkred;
   color: white;
   text-decoration: underline;
 }
