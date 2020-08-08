@@ -250,7 +250,7 @@ p {
 }  
 
 .contact-item iframe {
-  height: 100%;
+  height: 30vh;
   width: 100%;
   border-radius: 10%;
   box-shadow: 0 0 1px 1px #538d22;
@@ -290,4 +290,103 @@ p {
   background-color: darkred;
   color: white;
   text-decoration: underline;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  
+  .header-image {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .intro-image {
+    height: 30vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 1px 1px #538d22;
+  }
+
+  .menu-image {
+    height: 30vh;
+    width: 40vw;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .order-image {
+    height: 30vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 1px 1px #538d22;
+  }
+
+  .contact-image {
+    height: 30vh;
+    width: 40vw;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 1px 1px #538d22;
+  }
+
+  .contact-item iframe {
+    height: 30vh;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 1px 1px #538d22;
+  }
+
+  #intro-grid {
+
+    p {
+      font-size: 1.1em;
+    }
+    
+  }
+
+  #menu-grid {
+
+    p {
+      font-size: 1.1em;
+    }
+    
+  }
+
+  #order-grid {
+
+    p {
+      font-size: 1.1em;
+    }
+    
+  }
+
+  #contact-grid {
+
+    p {
+      font-size: 1.1em;
+    }
+    
+  }
+
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+
+  .menu-image {
+    height: 30vh;
+    width: 30vw;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+}
+
+@media (min-width: 1025px) {  
+  
+
 }
