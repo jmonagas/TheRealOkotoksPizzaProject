@@ -376,17 +376,131 @@ p {
 
 @media (min-width: 480px) and (orientation: landscape) {
 
+  .intro-image {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
   .menu-image {
-    height: 30vh;
+    height: 60vh;
     width: 30vw;
     object-fit: cover;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .order-image {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .contact-image {
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .contact-item iframe {
+    height: 60vh;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .menu-description {
+    text-align: justify;
+    align-content: center;
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: 1em;
+    font-size: 0.5em;
+    line-height: 1.2;
+  }
+
+  .menu-item:hover {
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+    opacity: 5;
+    border-radius: 20px;
+  }
+  
+  .menu-item:hover > .menu-description {
+    opacity: 5;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+    top: 1.5em;
+    border-radius: 5px;
   }
   
 }
 
+@media (min-width: 481px) and (orientation: landscape) {
+
+  #order-grid {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 3em;
+    row-gap: 3em;
+    text-align: justify;
+    align-content: center;
+    padding: 3em;
+    font-size: 1.2em;
+  }
+
+  #contact-grid {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 3em;
+    row-gap: 3em;
+    text-align: justify;
+    align-content: center;
+    padding: 3em;
+    font-size: 1.2em;
+  }
+
+  .order-image {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .contact-image {
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 3%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+  .contact-item iframe {
+    height: 60vh;
+    width: 100%;
+    border-radius: 3%;
+    box-shadow: 0 0 0.5px 0.5px #538d22;
+  }
+
+}
+
 @media (min-width: 1025px) {  
   
+
 
 }
