@@ -34,12 +34,12 @@ p {
 #header-grid a {
   cursor: pointer;
   text-decoration: none;
-  color: rgb(199, 36, 36);
+  color: tomato;
 }
   
 #header-grid a:hover {
   cursor: pointer;
-  color: rgb(114, 124, 114);
+  color: darkred;
   text-decoration: underline;
   font-size: 1.2em;
 }
@@ -52,24 +52,26 @@ p {
 
 .navigation-bar {
   width: 100%;
-  background-color: rgb(199, 36, 36);
-  overflow: auto;
+  background-color: rgb(240, 48, 14);
+  overflow: hidden;
 }
   
 .navigation-bar a {
   float: left;
-  padding: 1em;
+  
   color: white;
   text-decoration: none;
   font-size: 1em;
+  padding: 10px 5vw;
 }
   
 .navigation-bar a:hover {
-  background-color: #538d22;
+  background-color: tomato;
 }
 
 .nav-active {
   background-color: darkred;
+  font-weight: bolder;
 }
 
 #intro-grid {
@@ -90,7 +92,6 @@ p {
   width: 75vw;
   object-fit: cover;
   border-radius: 10%;
-  box-shadow: 0 0 1px 1px #538d22;
 }
 
 .intro-image:hover {
@@ -99,7 +100,7 @@ p {
 }
 
 .intro-item a {
-  color: #538d22;
+  color: tomato;
   text-decoration: none;
 }
 
@@ -126,14 +127,14 @@ p {
 }
 
 .menu-item:hover {
-  box-shadow: 2px 2px 2px 2px #538d22;
+  box-shadow: 1px 1px 1px 1px #538d22;
   opacity: 5;
   border-radius: 20px;
 }
 
 .menu-item:hover > .menu-description {
   opacity: 5;
-  box-shadow: 2px 2px 2px 2px #538d22;
+  box-shadow: 1px 1px 1px 1px #538d22;
   top: 4em;
   border-radius: 5px;
 }
@@ -147,20 +148,19 @@ p {
 }
 
 .menu-item a {
-  color: #538d22;
+  color: darkred;
   text-decoration: none;
 }
 
 .menu-item a:hover {
-  color: darkred;
+  color: green;
   text-decoration: underline;
 }
 
 .menu-item:hover > .menu-image {
   opacity: 5;
-  box-shadow: 2px 2px 2px 2px #538d22;
+  box-shadow: 1px 1px 1px 1px #538d22;
   top: 1em;
-  border: 1px solid #538d22;
 }
 
 .menu-description {
@@ -193,7 +193,6 @@ p {
   width: 75vw;
   object-fit: cover;
   border-radius: 10%;
-  box-shadow: 0 0 1px 1px #538d22;
 }
 
 .order-image:hover {
@@ -202,7 +201,7 @@ p {
 }
 
 .order-item a {
-  color: #538d22;
+  color: tomato;
   text-decoration: none;
 }
 
@@ -230,7 +229,6 @@ p {
   width: 75vw;
   object-fit: cover;
   border-radius: 10%;
-  box-shadow: 0 0 1px 1px #538d22;
 }
 
 .contact-image:hover {
@@ -239,7 +237,7 @@ p {
 }
 
 .contact-item a {
-  color: #538d22;
+  color: tomato;
   text-decoration: none;
 }
 
@@ -250,14 +248,14 @@ p {
 }  
 
 .contact-item iframe {
-  height: 30vh;
-  width: 100%;
+  height: 40vh;
+  width: 75vw;
   border-radius: 10%;
-  box-shadow: 0 0 1px 1px #538d22;
+  box-shadow: 1px 1px 1px 1px #538d22;
 }
 
 .contact-item iframe:hover {
-  box-shadow: 0 0 1px 1px darkred;
+  box-shadow: 1px 1px 1px 1px darkred;
   cursor: pointer;
 }
 
@@ -268,7 +266,7 @@ p {
   margin: 0;
   padding: 1em;
   font-size: 1em;
-  background-color: #538d22;
+  background-color: #7AC74F;
 }
   
 .footer-item ul {
@@ -287,13 +285,25 @@ p {
 }
   
 .footer-item li a:hover {
-  background-color: darkred;
+  background-color: green;
   color: white;
   text-decoration: underline;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   
+  #header-grid a {
+    font-size: 1.6em;
+    color: tomato;
+  }
+
+  #header-grid a:hover {
+    cursor: pointer;
+    color: darkred;
+    text-decoration: underline;
+    font-size: 2em;
+  }
+
   .header-image {
     height: 50%;
     width: 50%;
@@ -305,7 +315,6 @@ p {
     width: 40vw;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 1px 1px #538d22;
   }
 
   .menu-image {
@@ -321,7 +330,6 @@ p {
     width: 40vw;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 1px 1px #538d22;
   }
 
   .contact-image {
@@ -330,14 +338,12 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 1px 1px #538d22;
   }
 
   .contact-item iframe {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     border-radius: 10%;
-    box-shadow: 0 0 1px 1px #538d22;
   }
 
   #intro-grid {
@@ -351,7 +357,7 @@ p {
   #menu-grid {
 
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
     
   }
@@ -381,7 +387,6 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
   }
 
   .menu-image {
@@ -390,7 +395,7 @@ p {
     object-fit: cover;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
+    box-shadow: 1px 1px 1px 1px #538d22;
   }
 
   .order-image {
@@ -398,7 +403,6 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
   }
 
   .contact-image {
@@ -407,14 +411,13 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 10%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
   }
 
   .contact-item iframe {
-    height: 60vh;
+    height: 60hv;
     width: 100%;
     border-radius: 10%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
+    box-shadow: 1px 1px 1px 1px #538d22;
   }
 
   .menu-description {
@@ -426,19 +429,18 @@ p {
     z-index: 1;
     background-color: white;
     top: 1em;
-    font-size: 0.5em;
     line-height: 1.2;
   }
 
   .menu-item:hover {
-    box-shadow: 0 0 0.5px 0.5px #538d22;
+    box-shadow: 1px 1px 1px 1px #538d22;
     opacity: 5;
     border-radius: 20px;
   }
   
   .menu-item:hover > .menu-description {
     opacity: 5;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
+    box-shadow: 1px 1px 1px 1px #538d22;
     top: 1.5em;
     border-radius: 5px;
   }
@@ -478,7 +480,6 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 3%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
   }
 
   .contact-image {
@@ -487,20 +488,219 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 3%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
   }
 
   .contact-item iframe {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     border-radius: 3%;
-    box-shadow: 0 0 0.5px 0.5px #538d22;
+    box-shadow: 1px 1px 1px 1px #538d22;
   }
 
 }
 
 @media (min-width: 1025px) {  
-  
 
+  #header-grid a {
+    font-size: 1.5em;
+    color: tomato;
+  }
+
+  #header-grid a:hover {
+    cursor: pointer;
+    color: darkred;
+    text-decoration: underline;
+    font-size: 2em;
+  }
+    
+  .header-image {
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+  }
+
+  #intro-grid {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 5em;
+    row-gap: 5em;
+    text-align: justify;
+    align-content: center;
+    padding: 2em;
+    font-size: 1.2em;
+  }
+  
+  .intro-image {
+    height: 60vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 3%;
+  }
+  
+  .intro-image:hover {
+    border: 1px solid darkred;
+    cursor: pointer;
+  }
+  
+  .intro-item a {
+    color: tomato;
+    text-decoration: none;
+  }
+  
+  .intro-item a:hover {
+    color: darkred;
+    text-decoration: underline;
+    font-size: 1.2em;
+  }  
+
+  #menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 100%;
+    margin: 0;
+    row-gap: 4em;
+    column-gap: 4em;
+    text-align: center;
+    align-content: center;
+    padding: 2em;
+    font-size: 1.1em;
+  }
+
+  .menu-item {
+    position: relative;
+  }
+
+  .menu-item:hover {
+    box-shadow: 1px 1px 1px 1px green;
+    opacity: 5;
+    border-radius: 20px;
+  }
+
+  .menu-item:hover > .menu-description {
+    opacity: 5;
+    top: 4em;
+    border-radius: 5px;
+  }
+
+  .menu-image {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .menu-item a {
+    color: darkred;
+    text-decoration: none;
+  }
+
+  .menu-item a:hover {
+    color: rgb(37, 179, 37);
+    text-decoration: underline;
+  }
+
+  .menu-item:hover > .menu-image {
+    opacity: 5;
+    top: 1em;
+  }
+
+  .menu-description {
+    text-align: justify;
+    align-content: center;
+    opacity: 0;
+    padding: 1.6em;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: 1em;
+    font-size: 1.2em;
+  }
+
+  #order-grid {
+    display: grid;    
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 4em;
+    row-gap: 1.5em;
+    text-align: justify;
+    align-content: center;
+    padding: 4em;
+    font-size: 1.2em;
+  }
+
+  .order-image {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+  }
+
+  .order-image:hover {
+    cursor: pointer;
+    border: 1px solid darkred;
+  }
+
+  .order-item a {
+    color: tomato;
+    text-decoration: none;
+  }
+
+  .order-item a:hover {
+    color: darkred;
+    text-decoration: underline;
+    font-size: 1.2em;
+  }  
+
+  #contact-grid {
+    display: grid;    
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    max-width: 100%;    
+    margin: 0;
+    column-gap: 4em;
+    row-gap: 3em;
+    text-align: justify;
+    align-content: center;
+    padding: 4em;
+    font-size: 1.2em;
+  }
+
+  .contact-image {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+  }
+
+  .contact-image:hover {
+    cursor: pointer;
+    border: 1px solid darkred;
+  }
+
+  .contact-item a {
+    color: tomato;
+    text-decoration: none;
+  }
+
+  .contact-item a:hover {
+    color: darkred;
+    text-decoration: underline;
+    font-size: 1.2em;
+  }  
+
+  .contact-item iframe {
+    height: 70vh;
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  .contact-item iframe:hover {
+    cursor: pointer;
+  }
 
 }
