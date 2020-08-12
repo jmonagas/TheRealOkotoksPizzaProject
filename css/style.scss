@@ -9,39 +9,50 @@ html {
   line-height: 2;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+h1, h2, h3, h4 {
+  font-family: Verdana, Tahoma, sans-serif;
   font-weight: bolder;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
-  
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  .mobile-Display {
+    display: inline;
+  }
+
+  .not-mobile-Display {
+    display: none;
+  }
+}
+
 #header-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  grid-template-columns: repeat(2, 50%);
+  max-width: 100%;
   margin-top: 3em;
   margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
   text-align: center;
   align-items: center;
+  color: #C52C2A;
 }
   
 #header-grid a {
-  cursor: pointer;
   text-decoration: none;
-  color: tomato;
+  color: #C52C2A;
+  font-family: Verdana, Tahoma, sans-serif;
 }
   
 #header-grid a:hover {
-  cursor: pointer;
-  color: darkred;
   text-decoration: underline;
-  font-size: 1.2em;
+  color: #C52C2A;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }
   
 .header-image {
@@ -52,25 +63,27 @@ p {
 
 .navigation-bar {
   width: 100%;
-  background-color: rgb(240, 48, 14);
+  background-color: #C52C2A;
   overflow: hidden;
+  font-size: 1em;
 }
   
 .navigation-bar a {
   float: left;
-  
   color: white;
   text-decoration: none;
-  font-size: 1em;
-  padding: 10px 5vw;
+  padding: 9px 3vw;
+  font-family: Verdana, Tahoma, sans-serif;
 }
   
 .navigation-bar a:hover {
   background-color: tomato;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }
 
 .nav-active {
-  background-color: darkred;
+  background-color: rgb(156, 33, 33);
   font-weight: bolder;
 }
 
@@ -78,44 +91,46 @@ p {
   display: grid;    
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 100%;    
-  margin: 0;
   column-gap: 3em;
   row-gap: 3em;
   text-align: justify;
   align-content: center;
   padding: 3em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .intro-image {
-  height: 40vh;
+  height: 50vh;
   width: 75vw;
   object-fit: cover;
-  border-radius: 10%;
+  border-radius: 5%;
+  border: 1px solid silver;
 }
 
 .intro-image:hover {
   cursor: pointer;
-  border: 1px solid darkred;
+  border: 1px solid gray;
 }
 
 .intro-item a {
   color: tomato;
   text-decoration: none;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .intro-item a:hover {
   color: darkred;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }  
 
 #menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 95%;
-  margin: 0;
-  row-gap: 1em;
+  max-width: 100%;
+  column-gap: 1em;
+  row-gap: 2em;
   text-align: center;
   align-content: center;
   padding: 2em;
@@ -124,24 +139,28 @@ p {
 
 .menu-item {
   position: relative;
+  border: 1px solid silver;
+  border-radius: 20px;
 }
 
 .menu-item:hover {
-  box-shadow: 1px 1px 1px 1px #538d22;
+  box-shadow: 1px 1px 1px 1px silver;
   opacity: 5;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .menu-item:hover > .menu-description {
   opacity: 5;
-  box-shadow: 1px 1px 1px 1px #538d22;
-  top: 4em;
+  box-shadow: 1px 1px 1px 1px silver;
   border-radius: 5px;
+  top: 2em;
+  cursor: pointer;
 }
 
 .menu-image {
   height: 50vh;
-  width: 70vw;
+  width: 75vw;
   object-fit: cover;
   text-align: center;
   border-radius: 10px;
@@ -150,17 +169,19 @@ p {
 .menu-item a {
   color: darkred;
   text-decoration: none;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .menu-item a:hover {
-  color: green;
+  color: rgb(46, 185, 46);
   text-decoration: underline;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }
 
 .menu-item:hover > .menu-image {
   opacity: 5;
-  box-shadow: 1px 1px 1px 1px #538d22;
-  top: 1em;
+  top: 2em;
 }
 
 .menu-description {
@@ -171,44 +192,45 @@ p {
   position: absolute;
   z-index: 1;
   background-color: white;
-  top: 1em;
-  font-size: 1em;
+  top: 2em;
 }
 
 #order-grid {
   display: grid;    
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 100%;    
-  margin: 0;
   column-gap: 3em;
   row-gap: 3em;
   text-align: justify;
   align-content: center;
   padding: 3em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .order-image {
-  height: 40vh;
+  height: 50vh;
   width: 75vw;
   object-fit: cover;
   border-radius: 10%;
+  border: 1px solid silver;
 }
 
 .order-image:hover {
   cursor: pointer;
-  border: 1px solid darkred;
+  border: 1px solid gray;
 }
 
 .order-item a {
   color: tomato;
   text-decoration: none;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .order-item a:hover {
   color: darkred;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }  
 
 #contact-grid {
@@ -221,11 +243,11 @@ p {
   text-align: justify;
   align-content: center;
   padding: 3em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .contact-image {
-  height: 40vh;
+  height: 50vh;
   width: 75vw;
   object-fit: cover;
   border-radius: 10%;
@@ -233,29 +255,31 @@ p {
 
 .contact-image:hover {
   cursor: pointer;
-  border: 1px solid darkred;
+  border: 1px solid gray;
 }
 
 .contact-item a {
   color: tomato;
   text-decoration: none;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .contact-item a:hover {
   color: darkred;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }  
 
 .contact-item iframe {
-  height: 40vh;
+  height: 50vh;
   width: 75vw;
   border-radius: 10%;
-  box-shadow: 1px 1px 1px 1px #538d22;
+  box-shadow: 1px 1px 1px 1px silver;
 }
 
 .contact-item iframe:hover {
-  box-shadow: 1px 1px 1px 1px darkred;
+  box-shadow: 1px 1px 1px 1px gray;
   cursor: pointer;
 }
 
@@ -265,8 +289,8 @@ p {
   max-width: 100%;
   margin: 0;
   padding: 1em;
+  background-color: #A41212;
   font-size: 1em;
-  background-color: #7AC74F;
 }
   
 .footer-item ul {
@@ -285,15 +309,25 @@ p {
 }
   
 .footer-item li a:hover {
-  background-color: green;
+  background-color: tomato;
   color: white;
   text-decoration: underline;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
-  
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+  .mobile-Display {
+    display: none;
+  }
+
+  .not-mobile-Display {
+    display: inline;
+  }
+
   #header-grid a {
-    font-size: 1.6em;
+    font-size: 1.2em;
     color: tomato;
   }
 
@@ -301,7 +335,7 @@ p {
     cursor: pointer;
     color: darkred;
     text-decoration: underline;
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .header-image {
@@ -315,6 +349,7 @@ p {
     width: 40vw;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .menu-image {
@@ -323,6 +358,7 @@ p {
     object-fit: cover;
     text-align: center;
     border-radius: 10px;
+    border-color: 1px solid silver;
   }
 
   .order-image {
@@ -330,6 +366,7 @@ p {
     width: 40vw;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .contact-image {
@@ -338,18 +375,20 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .contact-item iframe {
     height: 40vh;
     width: 100%;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   #intro-grid {
 
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
     
   }
@@ -365,7 +404,7 @@ p {
   #order-grid {
 
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
     
   }
@@ -373,20 +412,30 @@ p {
   #contact-grid {
 
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
     
   }
 
 }
 
-@media (min-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+
+  .mobile-Display {
+    display: inline;
+    font-size: 1.2em;
+  }
+
+  .not-mobile-Display {
+    display: none;
+  }
 
   .intro-image {
     height: 60vh;
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .menu-image {
@@ -395,7 +444,6 @@ p {
     object-fit: cover;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px #538d22;
   }
 
   .order-image {
@@ -403,6 +451,7 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .contact-image {
@@ -411,13 +460,15 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 10%;
+    border-color: 1px solid silver;
   }
 
   .contact-item iframe {
     height: 60hv;
     width: 100%;
     border-radius: 10%;
-    box-shadow: 1px 1px 1px 1px #538d22;
+    box-shadow: 1px 1px 1px 1px silver;
+    border-color: 1px solid silver;
   }
 
   .menu-description {
@@ -430,24 +481,34 @@ p {
     background-color: white;
     top: 1em;
     line-height: 1.2;
+    border-color: 1px solid silver;
   }
 
   .menu-item:hover {
-    box-shadow: 1px 1px 1px 1px #538d22;
+    box-shadow: 1px 1px 1px 1px silver;
     opacity: 5;
     border-radius: 20px;
   }
   
   .menu-item:hover > .menu-description {
     opacity: 5;
-    box-shadow: 1px 1px 1px 1px #538d22;
+    box-shadow: 1px 1px 1px 1px silver;
     top: 1.5em;
     border-radius: 5px;
   }
   
 }
 
-@media (min-width: 481px) and (orientation: landscape) {
+@media only screen and (min-width: 481px) and (orientation: landscape) {
+
+  .mobile-Display {
+    display: none;
+  }
+
+  .not-mobile-Display {
+    display: inline;
+    font-size: 1.2em;
+  }
 
   #order-grid {
     display: grid;    
@@ -480,6 +541,7 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 3%;
+    border-color: 1px solid silver;
   }
 
   .contact-image {
@@ -488,29 +550,41 @@ p {
     padding: 0;
     object-fit: cover;
     border-radius: 3%;
+    border-color: 1px solid silver;
   }
 
   .contact-item iframe {
     height: 80vh;
     width: 100%;
     border-radius: 3%;
-    box-shadow: 1px 1px 1px 1px #538d22;
+    box-shadow: 1px 1px 1px 1px silver;
+    border-color: 1px solid silver;
   }
 
 }
 
-@media (min-width: 1025px) {  
+@media only screen and (min-width: 1025px) {  
+
+  .mobile-Display {
+    display: none;
+  }
+
+  .not-mobile-Display {
+    display: inline;
+    font-size: 1.3em;
+  }
 
   #header-grid a {
     font-size: 1.5em;
     color: tomato;
+    font-size: 1.3em;
   }
 
   #header-grid a:hover {
     cursor: pointer;
     color: darkred;
     text-decoration: underline;
-    font-size: 2em;
+    font-size: 1.3em;
   }
     
   .header-image {
@@ -529,7 +603,7 @@ p {
     text-align: justify;
     align-content: center;
     padding: 2em;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   
   .intro-image {
@@ -537,10 +611,11 @@ p {
     width: 40vw;
     object-fit: cover;
     border-radius: 3%;
+    border: 1px solid silver;
   }
   
   .intro-image:hover {
-    border: 1px solid darkred;
+    border: 1px solid gray;
     cursor: pointer;
   }
   
@@ -552,7 +627,6 @@ p {
   .intro-item a:hover {
     color: darkred;
     text-decoration: underline;
-    font-size: 1.2em;
   }  
 
   #menu-grid {
@@ -573,14 +647,13 @@ p {
   }
 
   .menu-item:hover {
-    box-shadow: 1px 1px 1px 1px green;
     opacity: 5;
     border-radius: 20px;
   }
 
   .menu-item:hover > .menu-description {
     opacity: 5;
-    top: 4em;
+    top: 3em;
     border-radius: 5px;
   }
 
@@ -616,7 +689,7 @@ p {
     z-index: 1;
     background-color: white;
     top: 1em;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   #order-grid {
@@ -630,7 +703,7 @@ p {
     text-align: justify;
     align-content: center;
     padding: 4em;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .order-image {
@@ -638,11 +711,12 @@ p {
     width: 100%;
     object-fit: cover;
     border-radius: 1%;
+    border: 1px solid silver;
   }
 
   .order-image:hover {
     cursor: pointer;
-    border: 1px solid darkred;
+    border: 1px solid gray;
   }
 
   .order-item a {
@@ -653,7 +727,6 @@ p {
   .order-item a:hover {
     color: darkred;
     text-decoration: underline;
-    font-size: 1.2em;
   }  
 
   #contact-grid {
@@ -667,19 +740,20 @@ p {
     text-align: justify;
     align-content: center;
     padding: 4em;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .contact-image {
     height: 70vh;
     width: 100%;
     object-fit: cover;
-    border-radius: 1%;
+    border-radius: 3%;
+    border-color: 1px solid silver;
   }
 
   .contact-image:hover {
     cursor: pointer;
-    border: 1px solid darkred;
+    border: 1px solid gray;
   }
 
   .contact-item a {
@@ -690,13 +764,13 @@ p {
   .contact-item a:hover {
     color: darkred;
     text-decoration: underline;
-    font-size: 1.2em;
   }  
 
   .contact-item iframe {
     height: 70vh;
     width: 100%;
-    border-radius: 1%;
+    border-radius: 3%;
+    border-color: 1px solid silver;
   }
 
   .contact-item iframe:hover {
